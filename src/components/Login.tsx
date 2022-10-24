@@ -19,15 +19,19 @@ const Login = ({ setUser }: Props) => {
   return (
     <Container>
       <form>
+        <label htmlFor="name">name</label>
         <input
           type="text"
+          name="name"
           value={name}
           onChange={(e) => {
             setName(e.target.value);
           }}
         />
+        <label htmlFor="room">room</label>
         <input
           type="text"
+          name="room"
           value={room}
           onChange={(e) => {
             setRoom(e.target.value);

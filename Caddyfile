@@ -1,0 +1,8 @@
+https://192.168.68.107 {
+        root * ./build
+        file_server
+}
+
+https://192.168.68.107:1234 {
+        reverse_proxy localhost:8080
+}
